@@ -9,7 +9,6 @@ module.exports = {
     {
       env: {
         node: true,
-        jest: true,
       },
       files: [
         '.eslintrc.{js,cjs}',
@@ -24,5 +23,9 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+    ],
   },
 };
